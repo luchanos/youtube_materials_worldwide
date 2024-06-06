@@ -2,7 +2,7 @@ import math
 from functools import reduce
 
 
-def circle_area(radius):
+def triangle_area(radius):
     return math.pi * radius ** 2
 
 
@@ -13,7 +13,7 @@ def rectangle_area(width, height):
 def calculate_area(shape):
     shape_type = shape[0]
     if shape_type == 'circle':
-        return circle_area(shape[1])
+        return triangle_area(shape[1])
     elif shape_type == 'rectangle':
         return rectangle_area(shape[1], shape[2])
     else:
