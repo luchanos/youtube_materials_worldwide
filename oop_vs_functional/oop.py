@@ -26,7 +26,7 @@ class Rectangle:
 
 shapes = [
     Circle(5),
-    Rectangle(3, 4),
+    Rectangle(width=3, height=4),
     Circle(2),
     Rectangle(6, 7)
 ]
@@ -35,5 +35,5 @@ areas = [shape.calculate_area() for shape in shapes]
 
 total_area = sum(areas)
 
-print("Площади фигур:", areas)
-print("Общая площадь:", total_area)
+print("The areas of shapes:", areas)
+print("The total area of all shapes:", total_area)
