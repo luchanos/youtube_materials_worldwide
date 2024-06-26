@@ -1,4 +1,4 @@
-from oop.concepts.inheritance import Shape
+from inheritance import Shape
 
 
 class Rectangle(Shape):
@@ -42,7 +42,6 @@ class Package:
         self.height = height
 
     def calculate_area(self):
-        # Площадь поверхности прямоугольной коробки
         return 2 * (self.length * self.width + self.width * self.height + self.height * self.length)
 
 
